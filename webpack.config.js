@@ -1,6 +1,5 @@
 const path = require("path");
 
-const themeEntries = require('./MapStore2/build/themes.js').themeEntries;
 const extractThemesPlugin = require('./MapStore2/build/themes.js').extractThemesPlugin;
 
 module.exports = require('./MapStore2/build/buildConfig')(
@@ -9,7 +8,9 @@ module.exports = require('./MapStore2/build/buildConfig')(
         'ide_caceres-embedded': path.join(__dirname, "MapStore2", "web", "client", "product", "embedded"),
         'ide_caceres-api': path.join(__dirname, "MapStore2", "web", "client", "product", "api")
     },
-    themeEntries,
+    {
+        "themes/default": path.join(__dirname, "js", "themes", "ide_caceres", "theme.less")
+    },
     {
         base: __dirname,
         dist: path.join(__dirname, "dist"),
