@@ -11,3 +11,5 @@ backend/.classpath
 backend/.project
 
 .idea/
+/.settings/
+/.project
