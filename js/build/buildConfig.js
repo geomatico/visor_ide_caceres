@@ -165,7 +165,7 @@ module.exports = (bundles, themeEntries, paths, extractThemesPlugin, prod, publi
     devServer: {
         proxy: proxy || {
             '/geostore/rest/': {
-                target: "http://localhost:9191/geostore/rest/",
+                target: "http://localhost:9191",
                 secure: false
             },
             '/pdf': {
