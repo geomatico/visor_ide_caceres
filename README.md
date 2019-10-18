@@ -133,3 +133,61 @@ y después
 ```
 docker start geostore
 ```
+
+### Configurando GoeStore con EXT json
+
+Para usar EXT Json hay que crear un nuevo war con este servicio.
+
+Para ello lo primero es situarse en la carpeta `src` de geostore y añadir la dependencia al `pom.xml` que hay en esa 
+
+carpeta:
+ 
+```
+  <dependency>
+      <groupId>it.geosolutions.geostore</groupId>
+      <artifactId>geostore-rest-client</artifactId>
+      <version>${geostore-version}</version>
+   </dependency
+``` 
+
+después desde la misma carpeta ejecutamos:
+
+```
+mvn clean install -Dovrdir=postgres -Pextjs,postgres
+```
+
+y obtendremos de nuevo:
+
+```
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for GeoStore - 0 Server Root 1.4.1:
+[INFO] 
+[INFO] GeoStore - 0 Server Root ........................... SUCCESS [  2.069 s]
+[INFO] GeoStore - Core .................................... SUCCESS [  0.085 s]
+[INFO] GeoStore - Core - Model ............................ SUCCESS [  9.094 s]
+[INFO] GeoStore - Core - Security ......................... SUCCESS [  6.981 s]
+[INFO] GeoStore - Core - Persistence ...................... SUCCESS [  9.602 s]
+[INFO] GeoStore - Core - Services API ..................... SUCCESS [  8.164 s]
+[INFO] GeoStore - Core - Services implementation .......... SUCCESS [ 11.074 s]
+[INFO] GeoStore - Modules ................................. SUCCESS [  0.023 s]
+[INFO] GeoStore - Modules - REST root ..................... SUCCESS [  0.013 s]
+[INFO] GeoStore - Modules - REST API ...................... SUCCESS [  4.808 s]
+[INFO] GeoStore - Modules - REST services ................. SUCCESS [  7.335 s]
+[INFO] GeoStore - Modules - REST client ................... SUCCESS [  5.594 s]
+[INFO] GeoStore - Modules - REST EXTJS services ........... SUCCESS [  8.175 s]
+[INFO] GeoStore - Modules - REST services test ............ SUCCESS [  3.678 s]
+[INFO] GeoStore - Modules - REST auditing ................. SUCCESS [  4.068 s]
+[INFO] GeoStore - Web ..................................... SUCCESS [  0.049 s]
+[INFO] GeoStore - Webapp .................................. SUCCESS [ 10.216 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:32 min
+[INFO] Finished at: 2019-10-18T10:42:46+02:00
+[INFO] ------------------------------------------------------------------------
+```
+
+se creará un nuevo `geostore.war` en la carpeta `<GEOSTORE_DIR>/src/web/app/target` que deberemos copiar en la 
+carpeta `docker` de nuestro Mapstore y repetir los pasos para la creación del docker de GeoStore.
+
+
