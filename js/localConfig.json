@@ -8,7 +8,8 @@
           "https://nominatim.openstreetmap.org",
           "http://cloudsdi.geo-solutions.it",
           "https://gs-stable.geo-solutions.it/geoserver",
-          "https://gs-stable.geo-solutions.it:443/geoserver"
+          "https://gs-stable.geo-solutions.it:443/geoserver",
+          "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms"
         ]
     },
     "geoStoreUrl": "/geostore/rest/",
@@ -59,7 +60,7 @@
                 "isNew": true,
                 "autoload": false
             },
-            "selectedService": "gs_stable_csw",
+            "selectedService": "gs_stable_wms",
             "services": {
               "gs_stable_csw": {
                 "url": "https://gs-stable.geo-solutions.it/geoserver/csw",
@@ -68,9 +69,9 @@
                 "autoload": true
               },
               "gs_stable_wms": {
-                "url": "https://gs-stable.geo-solutions.it/geoserver/wms",
+                "url": "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
                 "type": "wms",
-                "title": "GeoSolutions GeoServer WMS",
+                "title": "DEV Geoserver dip-caceres",
                 "autoload": false
               },
               "gs_stable_wmts": {
