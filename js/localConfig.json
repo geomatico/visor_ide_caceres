@@ -40,14 +40,6 @@
     "projectionDefs": [],
     "initialState": {
       "defaultState": {
-        "annotations": {
-          "config": {
-            "multiGeometry": true,
-            "validationErrors": {}
-          },
-          "format": "decimal",
-          "defaultTextAnnotation": "New"
-        },
         "maptype": {
             "mapType": "{context.mode === 'desktop' ? 'openlayers' : 'leaflet'}"
         },
@@ -62,22 +54,10 @@
             },
             "selectedService": "gs_stable_wms",
             "services": {
-              "gs_stable_csw": {
-                "url": "https://gs-stable.geo-solutions.it/geoserver/csw",
-                "type": "csw",
-                "title": "GeoSolutions GeoServer CSW",
-                "autoload": true
-              },
               "gs_stable_wms": {
                 "url": "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
                 "type": "wms",
                 "title": "DEV Geoserver dip-caceres",
-                "autoload": false
-              },
-              "gs_stable_wmts": {
-                "url": "https://gs-stable.geo-solutions.it/geoserver/gwc/service/wmts",
-                "type": "wmts",
-                "title": "GeoSolutions GeoServer WMTS",
                 "autoload": false
               }
             }
@@ -85,22 +65,6 @@
         },
         "locales": {
           "supportedLocales": {
-            "it": {
-              "code": "it-IT",
-              "description": "Italiano"
-            },
-            "en": {
-              "code": "en-US",
-              "description": "English"
-            },
-            "fr": {
-              "code": "fr-FR",
-              "description": "Français"
-            },
-            "de": {
-              "code": "de-DE",
-              "description": "Deutsch"
-            },
             "es": {
               "code": "es-ES",
               "description": "Español"
@@ -157,7 +121,7 @@
                         "alwaysVisible": true
                     }
                 }
-            }, "Home", {
+            }, {
                 "name": "TOC",
                 "cfg": {
                     "activateMetedataTool": false,
@@ -241,7 +205,7 @@
                 }
               }
             }
-          }, "AutoMapUpdate", "HelpLink", "Share", "DrawerMenu", "Version", "Notifications", "BackgroundSelector", "Annotations",
+          }, "AutoMapUpdate", "Share", "DrawerMenu", "Version", "Notifications", "BackgroundSelector",
             {
                 "name": "Identify",
                 "cfg": {
@@ -256,14 +220,7 @@
                   }
                 }
             },
-            {
-                "name": "Locate",
-                "override": {
-                    "Toolbar": {
-                        "alwaysVisible": true
-                    }
-                }
-            }, "Home", "FeatureEditor",
+            "FeatureEditor",
             "WFSDownload",
             {
               "name": "QueryPanel",
@@ -291,10 +248,9 @@
                 }
             },
             "AddGroup",
-            "TOCItemsSettings",
-            "Tutorial", "MapFooter", {
+            "MapFooter", {
                 "name": "Measure"
-            }, "Print", "MapImport", "MapExport", {
+            }, "Print", {
                 "name": "Settings",
                 "cfg": {
                     "wrap": true
@@ -305,10 +261,6 @@
                     "wrap": true
                 }
             }, {
-              "name": "About",
-              "showIn": ["BurgerMenu"]
-            }
-            , {
               "name": "MousePosition",
               "cfg": {
                 "editCRS": true,
@@ -317,11 +269,6 @@
                 "filterAllowedCRS": ["EPSG:4326", "EPSG:3857"],
                 "additionalCRS": {}
               }
-            }, {
-                "name": "Search",
-                "cfg": {
-                  "withToggle": ["max-width: 768px", "min-width: 768px"]
-                }
             }, {
                 "name": "Toolbar",
                 "id": "NavigationBar",
@@ -364,7 +311,7 @@
                 "declineUrl" : "http://www.google.com"
                 }
             },
-            "OmniBar", "Login", "Save", "SaveAs", "BurgerMenu", "Expander", "Undo", "Redo", "FullScreen", "GlobeViewSwitcher", "SearchServicesConfig", "WidgetsBuilder", "Widgets", "WidgetsTray",
+            "OmniBar", "Save", "SaveAs", "BurgerMenu", "Expander", "Undo", "Redo", "FullScreen", "GlobeViewSwitcher", "SearchServicesConfig", "WidgetsBuilder", "Widgets", "WidgetsTray",
             "Timeline",
             "Playback",
             "FeedbackMask",
@@ -430,20 +377,14 @@
                         "alwaysVisible": true
                     }
                 }
-            }, {
-                "name": "Locate",
-                "override": {
-                    "Toolbar": {
-                        "alwaysVisible": true
-                    }
-                }
-            }, {
+            },  {
                 "name": "TOC",
                 "cfg": {
                     "activateMapTitle": false,
                     "activateSettingsTool": false,
                     "activateMetedataTool": false,
-                    "activateRemoveLayer": false
+                    "activateRemoveLayer": false,
+                    "alwaysVisible": true
                 }
 
             }, "AddGroup", "MapFooter", {
