@@ -276,8 +276,12 @@
                 "cfg": {
                     "id": "navigationBar"
                 }
-            },
-            "ScaleBox", {
+            }, {
+                "name": "Search",
+                "cfg": {
+                  "withToggle": ["max-width: 768px", "min-width: 768px"]
+                }
+            }, "ScaleBox", {
               "name":"ZoomAll",
               "override": {
                 "Toolbar": {
