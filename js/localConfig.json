@@ -129,11 +129,6 @@
                     "activateMapTitle": false,
                     "activateSortLayer": false
                 }
-            }, "AddGroup", {
-                "name": "TOCItemsSettings",
-                "cfg": {
-                    "width": 300
-                }
             }, {
                 "name": "Tutorial",
                 "cfg": {
@@ -244,11 +239,12 @@
                 "cfg": {
                     "activateQueryTool": true,
                     "activateAddLayerButton": true,
-                    "activateAddGroupButton": true,
-                    "activateMetedataTool": false
+                    "activateAddGroupButton": false,
+                    "activateMetedataTool": false,
+                    "activateMapTitle": false,
+                    "activateDownloadTool": true
                 }
             },
-            "AddGroup",
             "MapFooter", {
                 "name": "Measure"
             }, "Print", {
