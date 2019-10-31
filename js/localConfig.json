@@ -384,7 +384,7 @@
                     "alwaysVisible": true
                 }
 
-            }, "AddGroup", "MapFooter", {
+            }, "MapFooter", {
                 "name": "Settings",
                 "cfg": {
                     "wrap": true
