@@ -27,7 +27,7 @@ module.exports = {
         AddGroupPlugin: require('@mapstore/plugins/AddGroup').default,
         AnnotationsPlugin: require('@mapstore/plugins/Annotations'),
         AutoMapUpdatePlugin: require('@mapstore/plugins/AutoMapUpdate'),
-        BackgroundSelectorPlugin: require('@mapstore/plugins/BackgroundSelector'),
+        BackgroundSelectorPlugin: require('./plugins/BackgroundSelector'),
         BackgroundSwitcherPlugin: require('@mapstore/plugins/BackgroundSwitcher'),
         BurgerMenuPlugin: require('@mapstore/plugins/BurgerMenu'),
         CRSSelectorPlugin: require('@mapstore/plugins/CRSSelector'),
