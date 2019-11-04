@@ -1,0 +1,200 @@
+{
+  "version": 2,
+  "map": {
+    "center": {
+      "x": -5.99174155473709,
+      "y": 39.890179942323405,
+      "crs": "EPSG:4326"
+    },
+    "projection": "EPSG:900913",
+    "units": "m",
+    "zoom": 9,
+    "mapOptions": {},
+    "layers": [
+      {
+        "id": "mapnik__0",
+        "group": "background",
+        "source": "osm",
+        "name": "mapnik",
+        "title": "Open Street Map",
+        "type": "osm",
+        "visibility": true,
+        "singleTile": false,
+        "dimensions": [],
+        "hideLoading": false,
+        "handleClickOnLayer": false,
+        "useForElevation": false,
+        "hidden": false
+      },
+      {
+        "id": "OI.OrthoimageCoverage__1",
+        "format": "image/jpeg",
+        "group": "background",
+        "name": "OI.OrthoimageCoverage",
+        "title": "PNOA",
+        "type": "wms",
+        "url": "http://www.ign.es/wms-inspire/pnoa-ma?",
+        "visibility": false,
+        "singleTile": false,
+        "dimensions": [],
+        "hideLoading": false,
+        "handleClickOnLayer": false,
+        "useForElevation": false,
+        "hidden": false
+      },
+      {
+        "id": "municipios",
+        "name": "cnig_municipios",
+        "group": "ide",
+        "description": "Municipios CNIG",
+        "title": "Municipios Cáceres",
+        "type": "wms",
+        "url": "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
+        "bbox": {
+          "crs": "EPSG:4326",
+          "bounds": {
+            "minx": "-7.554628742954795",
+            "miny": "39.05246173611291",
+            "maxx": "-4.994870842260799",
+            "maxy": "40.49798516581429"
+          }
+        },
+        "visibility": true,
+        "singleTile": false,
+        "allowedSRS": {
+          "EPSG:3785": true,
+          "EPSG:3857": true,
+          "EPSG:4269": true,
+          "EPSG:4326": true,
+          "EPSG:102113": true,
+          "EPSG:900913": true
+        },
+        "dimensions": [],
+        "hideLoading": false,
+        "handleClickOnLayer": false,
+        "catalogURL": null,
+        "useForElevation": false,
+        "hidden": false,
+        "params": {}
+      },
+      {
+        "id": "area_natural",
+        "name": "area_natural",
+        "group": "ide",
+        "description": "Areas naturales",
+        "title": "Áreas naturales",
+        "type": "wms",
+        "url": "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
+        "bbox": {
+          "crs": "EPSG:4326",
+          "bounds": {
+            "minx": "-7.554628742954795",
+            "miny": "39.05246173611291",
+            "maxx": "-4.994870842260799",
+            "maxy": "40.49798516581429"
+          }
+        },
+        "visibility": true,
+        "singleTile": false,
+        "allowedSRS": {
+          "EPSG:3785": true,
+          "EPSG:3857": true,
+          "EPSG:4269": true,
+          "EPSG:4326": true,
+          "EPSG:102113": true,
+          "EPSG:900913": true
+        },
+        "dimensions": [],
+        "hideLoading": false,
+        "handleClickOnLayer": false,
+        "catalogURL": null,
+        "useForElevation": false,
+        "hidden": false,
+        "params": {}
+      },
+      {
+        "id": "grupo_red_distribucion__2",
+        "name": "grupo_red_distribucion",
+        "group": "ide",
+        "description": "Layer-Group type layer: grupo_red_distribucion",
+        "title": "Grupo red distribucion",
+        "type": "wms",
+        "url": "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
+        "bbox": {
+          "crs": "EPSG:4326",
+          "bounds": {
+            "minx": "-7.554628742954795",
+            "miny": "39.05246173611291",
+            "maxx": "-4.994870842260799",
+            "maxy": "40.49798516581429"
+          }
+        },
+        "visibility": true,
+        "singleTile": false,
+        "allowedSRS": {
+          "EPSG:3785": true,
+          "EPSG:3857": true,
+          "EPSG:4269": true,
+          "EPSG:4326": true,
+          "EPSG:102113": true,
+          "EPSG:900913": true
+        },
+        "dimensions": [],
+        "hideLoading": false,
+        "handleClickOnLayer": false,
+        "catalogURL": null,
+        "useForElevation": false,
+        "hidden": false,
+        "params": {}
+      }
+    ],
+    "groups": [
+      {
+        "id": "ide",
+        "title": "Capas IDE Cáceres",
+        "expanded": true
+      }
+    ],
+    "text_serch_config": {
+      "services": [
+        {
+          "type": "wfs",
+          "name": "Municipios Cáceres",
+          "displayName": "${properties.nameunit}",
+          "subTitle": "Municipio",
+          "priority": 6,
+          "options": {
+            "url": "http://ide.dip-caceres.geomati.co/geoserver/provincia/wfs",
+            "typeName": "provincia:cnig_municipios",
+            "queriableAttributes": [
+              "nameunit"
+            ],
+            "sortBy": "nameunit",
+            "maxFeatures": 5,
+            "srsName": "EPSG:4326"
+          }
+        }
+      ],
+      "override": true
+    }
+  },
+  "catalogServices": {
+    "services": {
+      "caceres": {
+        "url": "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
+        "type": "wms",
+        "title": "DEV Geoserver dip-caceres",
+        "autoload": false
+      },
+      "pnoa-historico": {
+        "url": "http://www.ign.es/wms/pnoa-historico",
+        "type": "wms",
+        "title": "PNOA Ortofotos historicas",
+        "autoload": false
+      }
+    },
+    "selectedService": "caceres"
+  },
+  "widgetsConfig": {},
+  "mapInfoConfiguration": {}
+}
