@@ -209,7 +209,9 @@
                     "showHighlightFeatureButton": true,
                     "viewerOptions": {
                         "container": "{context.ReactSwipe}"
-                    }
+                    },
+                    "dock": true,
+                    "draggable": false
                 },
                 "override": {
                   "Toolbar": {
@@ -249,11 +251,6 @@
             "MapFooter", {
                 "name": "Measure"
             }, "Print", {
-                "name": "Settings",
-                "cfg": {
-                    "wrap": true
-                }
-            }, {
                 "name": "MetadataExplorer",
                 "cfg": {
                     "wrap": true

@@ -30,8 +30,9 @@
         "id": "OI.OrthoimageCoverage__1",
         "format": "image/jpeg",
         "group": "background",
-        "name": "OI.OrthoimageCoverage",
+        "name": "pnoa",
         "title": "PNOA",
+        "source": "pnoa",
         "type": "wms",
         "url": "http://www.ign.es/wms-inspire/pnoa-ma?",
         "visibility": false,
@@ -196,5 +197,8 @@
     "selectedService": "caceres"
   },
   "widgetsConfig": {},
-  "mapInfoConfiguration": {}
+  "mapInfoConfiguration": {
+    "showEmptyMessageGFI": false,
+    "infoFormat": "application/json"
+  }
 }
