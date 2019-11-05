@@ -114,11 +114,11 @@
         "params": {}
       },
       {
-        "id": "grupo_red_distribucion__2",
-        "name": "grupo_red_distribucion",
+        "id": "red_distr_fuentepu_1",
+        "name": "red_distr_fuentepu",
         "group": "ide",
-        "description": "Layer-Group type layer: grupo_red_distribucion",
-        "title": "Grupo red distribucion",
+        "description": "Layer-Group type layer: red_distr_fuentepu",
+        "title": "Fuentes públicas",
         "type": "wms",
         "url": "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
         "bbox": {
