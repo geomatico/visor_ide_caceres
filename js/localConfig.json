@@ -10,11 +10,12 @@
           "https://gs-stable.geo-solutions.it/geoserver",
           "https://gs-stable.geo-solutions.it:443/geoserver",
           "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
+          "http://localhost:8080/geoserver/",
           "http://www.ign.es/wms/pnoa-historico"
         ]
     },
     "geoStoreUrl": "/geostore/rest/",
-    "printUrl": "pdf/info.json",
+    "printUrl": "js/pdf/info.json",
     "bingApiKey": "AhuXBu7ipR1gNbBfXhtUAyCZ6rkC5PkWpxs2MnMRZ1ZupxQfivjLCch22ozKSCAn",
     "mapquestApiKey": "__API_KEY_MAPQUEST__",
     "initialMapFilter": "",
@@ -129,11 +130,6 @@
                     "activateMapTitle": false,
                     "activateSortLayer": false
                 }
-            }, "AddGroup", {
-                "name": "TOCItemsSettings",
-                "cfg": {
-                    "width": 300
-                }
             }, {
                 "name": "Tutorial",
                 "cfg": {
@@ -244,11 +240,12 @@
                 "cfg": {
                     "activateQueryTool": true,
                     "activateAddLayerButton": true,
-                    "activateAddGroupButton": true,
-                    "activateMetedataTool": false
+                    "activateAddGroupButton": false,
+                    "activateMetedataTool": false,
+                    "activateMapTitle": false,
+                    "activateDownloadTool": true
                 }
             },
-            "AddGroup",
             "MapFooter", {
                 "name": "Measure"
             }, "Print", {
@@ -388,7 +385,7 @@
                     "alwaysVisible": true
                 }
 
-            }, "AddGroup", "MapFooter", {
+            }, "MapFooter", {
                 "name": "Settings",
                 "cfg": {
                     "wrap": true
