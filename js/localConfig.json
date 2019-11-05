@@ -328,7 +328,7 @@
                 "declineUrl" : "http://www.google.com"
                 }
             },
-            "OmniBar", "Save", "SaveAs", "BurgerMenu", "Expander", "Undo", "Redo", "FullScreen", "GlobeViewSwitcher", "WidgetsBuilder", "Widgets", "WidgetsTray",
+            "OmniBar", "Save", "SaveAs", "BurgerMenu", "SearchServicesConfig", "Expander", "Undo", "Redo", "FullScreen", "GlobeViewSwitcher", "WidgetsBuilder", "Widgets", "WidgetsTray",
             "Timeline",
             "Playback",
             "FeedbackMask",
