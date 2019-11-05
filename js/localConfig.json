@@ -44,13 +44,6 @@
         "maptype": {
             "mapType": "{context.mode === 'desktop' ? 'openlayers' : 'leaflet'}"
         },
-        "mapInfo": {
-          "enabled": true,
-          "configuration": {
-            "showEmptyMessageGFI": false,
-            "infoFormat": "text/html"
-          }
-        },
         "catalog": {
           "default": {
             "newService": {
@@ -221,7 +214,7 @@
                     "viewerOptions": {
                         "container": "{context.ReactSwipe}"
                     },
-                    "dock": false,
+                    "dock": true,
                     "draggable": false
                 },
                 "override": {
