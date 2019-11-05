@@ -190,4 +190,30 @@ y obtendremos de nuevo:
 se creará un nuevo `geostore.war` en la carpeta `<GEOSTORE_DIR>/src/web/app/target` que deberemos copiar en la 
 carpeta `docker` de nuestro Mapstore y repetir los pasos para la creación del docker de GeoStore.
 
+## Configurar impresión
 
+Para poder imprimir desde Mapstore será necesario tener configurada la extensión de Printing de GeoServer:
+
+[GeoServer Printing Module](https://docs.geoserver.org/latest/en/user/extensions/printing/index.html)
+
+Una vez instalada y comprobado que está todo correcto, necesitaremos instalar la configuración del plugin. Para ello 
+copiaremos los contenidos de la carpeta `resources/geoserver/printing` a nuestra carpeta del módulo de printing del GS
+
+`<GEOSERVER_DATA_DIR/printing>`
+
+Para comprobar si está configurado correctamente:
+
+[http://localhost:8080/geoserver/pdf/info.json](http://localhost:8080/geoserver/pdf/info.json)
+
+En el archivo `config.yaml` se encuentra la definición de las plantillas que hay accesibles a través del módulo printing.
+
+Habrá que configurar las URL necesarias del plugin de impresión de MapStore para que use el módulo propio de impresión.
+
+:warning: LAS URLS DEBERÁN SER ABSOLUTAS, menos en el `devServer.proxy``:warning:
+
+| Archivo |  | valor |
+|--------------------|--------------------|-------------------------------------------------|
+| `localConfig.json` | `proxyUrl.useCORS` | "http://<URL_SERVIDOR>/geoserver/workspace/wms" |
+| `js/pdf/info.json` | `printURL` | "http://<URL_SERVIDOR>/geoserver/pdf/print.pdf" |
+| `js/pdf/info.json` | `printURL` | "http://<URL_SERVIDOR>/geoserver/pdf/create.json" |
+| `build/buildConfig.json` | `devServer.proxy` | `'/pdf': { target: "http://localhost:8080/geoserver", secure: false }` |
