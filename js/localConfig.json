@@ -14,7 +14,7 @@
         ]
     },
     "geoStoreUrl": "/geostore/rest/",
-    "printUrl": "pdf/info.json",
+    "printUrl": "js/pdf/info.json",
     "initialMapFilter": "",
     "ignoreMobileCss": false,
     "useAuthenticationRules": true,
@@ -127,11 +127,6 @@
                     "activateMapTitle": false,
                     "activateSortLayer": false
                 }
-            }, "AddGroup", {
-                "name": "TOCItemsSettings",
-                "cfg": {
-                    "width": 300
-                }
             }, {
                 "name": "Tutorial",
                 "cfg": {
@@ -211,7 +206,9 @@
                     "showHighlightFeatureButton": true,
                     "viewerOptions": {
                         "container": "{context.ReactSwipe}"
-                    }
+                    },
+                    "dock": true,
+                    "draggable": false
                 },
                 "override": {
                   "Toolbar": {
@@ -242,19 +239,15 @@
                 "cfg": {
                     "activateQueryTool": true,
                     "activateAddLayerButton": true,
-                    "activateAddGroupButton": true,
-                    "activateMetedataTool": false
+                    "activateAddGroupButton": false,
+                    "activateMetedataTool": false,
+                    "activateMapTitle": false,
+                    "activateDownloadTool": true
                 }
             },
-            "AddGroup",
             "MapFooter", {
                 "name": "Measure"
             }, "Print", {
-                "name": "Settings",
-                "cfg": {
-                    "wrap": true
-                }
-            }, {
                 "name": "MetadataExplorer",
                 "cfg": {
                     "wrap": true
@@ -404,7 +397,7 @@
                     "alwaysVisible": true
                 }
 
-            }, "AddGroup", "MapFooter", {
+            }, "MapFooter", {
                 "name": "Settings",
                 "cfg": {
                     "wrap": true

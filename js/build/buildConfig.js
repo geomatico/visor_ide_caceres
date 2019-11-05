@@ -169,11 +169,11 @@ module.exports = (bundles, themeEntries, paths, extractThemesPlugin, prod, publi
                 secure: false
             },
             '/pdf': {
-                target: "http://localhost:9191/mapstore",
+                target: "http://localhost:8080/geoserver",
                 secure: false
             },
             '/mapstore/pdf': {
-                target: "http://localhost:9191",
+                target: "http://localhost:8080/geoserver",
                 secure: false
             },
             '/proxy': {
