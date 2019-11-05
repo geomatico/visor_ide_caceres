@@ -82,7 +82,7 @@ module.exports = {
         SavePlugin: require('@mapstore/plugins/Save'),
         ScaleBoxPlugin: require('@mapstore/plugins/ScaleBox'),
         ScrollTopPlugin: require('@mapstore/plugins/ScrollTop'),
-        SearchPlugin: require('@mapstore/plugins/Search'),
+        SearchPlugin: require('./plugins/Search'),
         SearchServicesConfigPlugin: require('@mapstore/plugins/SearchServicesConfig'),
         SettingsPlugin: require('@mapstore/plugins/Settings'),
         SharePlugin: require('@mapstore/plugins/Share'),
@@ -111,4 +111,3 @@ module.exports = {
         SwipeHeader: require('@mapstore/components/data/identify/SwipeHeader')
     }
 };
-

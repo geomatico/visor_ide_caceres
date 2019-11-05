@@ -9,15 +9,12 @@
           "http://cloudsdi.geo-solutions.it",
           "https://gs-stable.geo-solutions.it/geoserver",
           "https://gs-stable.geo-solutions.it:443/geoserver",
-          "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
-          "http://localhost:8080/geoserver/",
+          "http://ide.dip-caceres.geomati.co/geoserver",
           "http://www.ign.es/wms/pnoa-historico"
         ]
     },
     "geoStoreUrl": "/geostore/rest/",
     "printUrl": "js/pdf/info.json",
-    "bingApiKey": "AhuXBu7ipR1gNbBfXhtUAyCZ6rkC5PkWpxs2MnMRZ1ZupxQfivjLCch22ozKSCAn",
-    "mapquestApiKey": "__API_KEY_MAPQUEST__",
     "initialMapFilter": "",
     "ignoreMobileCss": false,
     "useAuthenticationRules": true,
@@ -270,8 +267,26 @@
                 "cfg": {
                     "id": "navigationBar"
                 }
+            }, {
+            "name": "Search",
+            "cfg": {
+                "withToggle": ["max-width: 768px", "min-width: 768px"],
+                "resultsStyle": {
+                    "iconUrl": "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+                    "shadowUrl": "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-shadow.png",
+                    "iconSize": [25, 41],
+                    "iconAnchor": [12, 41],
+                    "popupAnchor": [1, -34],
+                    "shadowSize": [41, 41],
+                    "color": "#C5342B",
+                    "weight": 4,
+                    "dashArray": "",
+                    "fillColor": "#3388ff",
+                    "fillOpacity": 0.2
+                }
+              }
             },
-            "ScaleBox", {
+             "ScaleBox", {
               "name":"ZoomAll",
               "override": {
                 "Toolbar": {
@@ -306,7 +321,7 @@
                 "declineUrl" : "http://www.google.com"
                 }
             },
-            "OmniBar", "Save", "SaveAs", "BurgerMenu", "Expander", "Undo", "Redo", "FullScreen", "GlobeViewSwitcher", "SearchServicesConfig", "WidgetsBuilder", "Widgets", "WidgetsTray",
+            "OmniBar", "Save", "SaveAs", "BurgerMenu", "SearchServicesConfig", "Expander", "Undo", "Redo", "FullScreen", "GlobeViewSwitcher", "WidgetsBuilder", "Widgets", "WidgetsTray",
             "Timeline",
             "Playback",
             "FeedbackMask",
