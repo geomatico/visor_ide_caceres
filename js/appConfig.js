@@ -8,41 +8,13 @@
 
 module.exports = {
     pages: [{
-        name: "home",
-        path: "/",
-        component: require('@mapstore/product/pages/Maps')
-    }, {
-        name: "maps",
-        path: "/maps",
-        component: require('@mapstore/product/pages/Maps')
-    }, {
         name: "mapviewer",
-        path: "/viewer/:mapType/:mapId",
+        path: "/visor/:mapType/:mapId",
         component: require('@mapstore/product/pages/MapViewer')
     }, {
         name: "mapviewer",
-        path: "/viewer/:mapId",
+        path: "/visor/:mapId",
         component: require('@mapstore/product/pages/MapViewer')
-    }, {
-        name: "manager",
-        path: "/manager",
-        component: require('@mapstore/product/pages/Manager')
-    }, {
-        name: "manager",
-        path: "/manager/:tool",
-        component: require('@mapstore/product/pages/Manager')
-    }, {
-        name: "dashboard",
-        path: "/dashboard",
-        component: require('@mapstore/product/pages/Dashboard')
-    }, {
-        name: "dashboard",
-        path: "/dashboard/:did",
-        component: require('@mapstore/product/pages/Dashboard')
-    }, {
-        name: "rulesmanager",
-        path: "/rules-manager",
-        component: require('@mapstore/product/pages/RulesManager')
     }],
     initialState: {
         defaultState: {
