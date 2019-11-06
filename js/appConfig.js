@@ -9,11 +9,11 @@
 module.exports = {
     pages: [{
         name: "mapviewer",
-        path: "/viewer/:mapType/:mapId",
+        path: "/visor/:mapType/:mapId",
         component: require('@mapstore/product/pages/MapViewer')
     }, {
         name: "mapviewer",
-        path: "/viewer/:mapId",
+        path: "/visor/:mapId",
         component: require('@mapstore/product/pages/MapViewer')
     }],
     initialState: {
