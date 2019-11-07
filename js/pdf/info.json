@@ -178,6 +178,6 @@
       "rotation": true
     }
   ],
-  "printURL": "http://localhost:8080/geoserver/pdf/print.pdf",
-  "createURL": "http://localhost:8080/geoserver/pdf/create.json"
+  "printURL": "http://ide.dip-caceres.geomati.co/geoserver/pdf/print.pdf",
+  "createURL": "http://ide.dip-caceres.geomati.co/geoserver/pdf/create.json"
 }
