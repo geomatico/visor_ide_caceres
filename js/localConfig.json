@@ -223,7 +223,7 @@
                     "activateAddGroupButton": false,
                     "activateMapTitle": false,
                     "activateDownloadTool": false,
-                    "activateRemoveLayer": false,
+                    "activateRemoveLayer": true,
                     "activateSettingsTool": false
                 }
             },
