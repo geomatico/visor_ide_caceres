@@ -12,7 +12,7 @@ const ConfigUtils = require('@mapstore/utils/ConfigUtils');
  *
  * ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
  */
-ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations']);
+ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './js/translations']);
 ConfigUtils.setConfigProp('themePrefix', 'ide_caceres');
 
 /**
