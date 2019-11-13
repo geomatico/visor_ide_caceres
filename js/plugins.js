@@ -30,7 +30,6 @@ module.exports = {
         ExpanderPlugin: require('@mapstore/plugins/Expander'),
         FloatingLegendPlugin: require('@mapstore/plugins/FloatingLegend'),
         FullScreenPlugin: require('@mapstore/plugins/FullScreen'),
-        GlobeViewSwitcherPlugin: require('@mapstore/plugins/GlobeViewSwitcher'),
         GoFull: require('@mapstore/plugins/GoFull'),
         GroupManagerPlugin: require('@mapstore/plugins/manager/GroupManager'),
         HomePlugin: require('@mapstore/plugins/Home'),

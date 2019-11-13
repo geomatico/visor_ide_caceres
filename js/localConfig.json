@@ -303,7 +303,7 @@
                 "declineUrl" : "http://www.google.com"
                 }
             },
-            "OmniBar", "BurgerMenu", "SearchServicesConfig", "Expander", "Undo", "Redo", "FullScreen", "GlobeViewSwitcher"
+            "OmniBar", "BurgerMenu", "SearchServicesConfig", "Expander", "Undo", "Redo", "FullScreen"
         ],
         "embedded": [{
                 "name": "Map",
