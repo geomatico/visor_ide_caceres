@@ -2,14 +2,42 @@
   "version": 2,
   "map": {
     "center": {
-      "x": -5.99174155473709,
-      "y": 39.890179942323405,
+      "x": -6.05,
+      "y": 39.67,
       "crs": "EPSG:4326"
     },
     "projection": "EPSG:900913",
     "units": "m",
-    "zoom": 9,
-    "mapOptions": {},
+    "zoom": 2,
+    "mapOptions": {
+      "view": {
+         "resolutions": [
+           1322.91666666667,
+           661.458333333335000,
+           264.583333333334000,
+           132.291666666667000,
+           66.145833333333500,
+           39.687500000000100,
+           26.458333333333400,
+           13.229166666666700,
+           6.614583333333350,
+           3.968750000000010,
+           1.322916666666670,
+           0.661458333333335,
+           0.396875000000001
+         ]
+       },
+
+      "openlayers": {
+        "interactions": {
+          "pinchRotate": false,
+          "altShiftDragRotate": false
+        },
+        "attribution": {
+          "container": "#mapstore-map-footer-container"
+        }
+      }
+    },
     "layers": [
       {
         "id": "mapnik__0",
