@@ -95,7 +95,7 @@
           "EPSG:3857": true,
           "EPSG:4269": true,
           "EPSG:4326": true,
-          "EPSG:102113": true,
+          "EPSG:25830": true,
           "EPSG:900913": true
         },
         "dimensions": [],
@@ -130,7 +130,7 @@
           "EPSG:3857": true,
           "EPSG:4269": true,
           "EPSG:4326": true,
-          "EPSG:102113": true,
+          "EPSG:25830": true,
           "EPSG:900913": true
         },
         "dimensions": [],
@@ -165,7 +165,7 @@
           "EPSG:3857": true,
           "EPSG:4269": true,
           "EPSG:4326": true,
-          "EPSG:102113": true,
+          "EPSG:25830": true,
           "EPSG:900913": true
         },
         "dimensions": [],
