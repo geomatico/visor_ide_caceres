@@ -9,8 +9,11 @@
           "http://cloudsdi.geo-solutions.it",
           "https://gs-stable.geo-solutions.it/geoserver",
           "https://gs-stable.geo-solutions.it:443/geoserver",
-          "http://ide.dip-caceres.geomati.co/geoserver",
-          "http://www.ign.es/wms/pnoa-historico"
+          "https://ide.dip-caceres.geomati.co/geoserver",
+          "https://ide.dip-caceres/geoserver",
+          "https://idepruebas.dip-caceres/geoserver",
+          "http://www.ign.es/wms/pnoa-historico",
+          "https://www.ign.es/wms/pnoa-historico"
         ]
     },
     "geoStoreUrl": "/geostore/rest/",
@@ -57,7 +60,7 @@
             "selectedService": "gs_stable_wms",
             "services": {
               "gs_stable_wms": {
-                "url": "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
+                "url": "/geoserver/provincia/wms",
                 "type": "wms",
                 "title": "DEV Geoserver dip-caceres",
                 "autoload": false
