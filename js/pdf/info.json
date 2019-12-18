@@ -178,6 +178,6 @@
       "rotation": true
     }
   ],
-  "printURL": "http://ide.dip-caceres.geomati.co/geoserver/pdf/print.pdf",
-  "createURL": "http://ide.dip-caceres.geomati.co/geoserver/pdf/create.json"
+  "printURL": "https://ideprueba.dip-caceres.es/geoserver/pdf/print.pdf",
+  "createURL": "https://ideprueba.dip-caceres.es/geoserver/pdf/create.json"
 }
