@@ -48,7 +48,7 @@
         "description": "Layer-Group type layer: grupo_red_distribucion",
         "title": "Grupo red distribucion",
         "type": "wms",
-        "url": "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
+        "url": "/geoserver/provincia/wms",
         "bbox": {
           "crs": "EPSG:4326",
           "bounds": {
@@ -87,13 +87,13 @@
   "catalogServices": {
     "services": {
       "caceres": {
-        "url": "http://ide.dip-caceres.geomati.co/geoserver/provincia/wms",
+        "url": "/geoserver/provincia/wms",
         "type": "wms",
-        "title": "DEV Geoserver dip-caceres",
+        "title": "Geoserver dip-caceres",
         "autoload": false
       },
       "pnoa-historico": {
-        "url": "http://www.ign.es/wms/pnoa-historico",
+        "url": "https://www.ign.es/wms/pnoa-historico",
         "type": "wms",
         "title": "PNOA Ortofotos historicas",
         "autoload": false
