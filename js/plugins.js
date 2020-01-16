@@ -47,7 +47,7 @@ module.exports = {
         MousePositionPlugin: require('@mapstore/plugins/MousePosition'),
         NotificationsPlugin: require('@mapstore/plugins/Notifications'),
         OmniBarPlugin: require('@mapstore/plugins/OmniBar'),
-        PrintPlugin: require('@mapstore/plugins/Print'),
+        PrintPlugin: require('./plugins/Print'),
         QueryPanelPlugin: require('@mapstore/plugins/QueryPanel'),
         RedirectPlugin: require('@mapstore/plugins/Redirect'),
         RedoPlugin: require('@mapstore/plugins/History'),
