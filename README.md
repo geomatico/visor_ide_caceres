@@ -18,7 +18,17 @@ Start the development application locally:
 
 The application runs at `http://localhost:8081` afterwards.
 
-## GeoStore
+## GeoStore externo
+
+Para desarrollar solo front-end, se puede editar js/localConfig.js para añadir un geostore externo:
+
+```
+"geoStoreUrl": "https://ide2.dip-caceres.geomati.co/geostore/rest/"
+```
+
+añadiendo también este servidor a "proxyURL->useCORS".
+
+## GeoStore local
 
 Dentro de la carpeta del proyecto hay una carpeta docker. Se ha añadido el war con la versión 1.4.1 de geostore.
 
