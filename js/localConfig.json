@@ -226,10 +226,10 @@
             }, {
                 "name": "TOC",
                 "cfg": {
-                    "activateQueryTool": false,
+                    "activateQueryTool": true,
                     "activateAddLayerButton": true,
-                    "activateAddGroupButton": false,
-                    "activateMapTitle": false,
+                    "activateAddGroupButton": true,
+                    "activateMapTitle": true,
                     "activateDownloadTool": false,
                     "activateRemoveLayer": true,
                     "activateSettingsTool": false
@@ -314,7 +314,7 @@
                 "declineUrl" : "http://www.google.com"
                 }
             },
-            "OmniBar", "BurgerMenu", "SearchServicesConfig", "Expander", "Undo", "Redo", "FullScreen"
+            "OmniBar", "Save", "SaveAs", "BurgerMenu", "SearchServicesConfig", "Expander", "Undo", "Redo", "FullScreen"
         ],
         "embedded": [{
                 "name": "Map",
