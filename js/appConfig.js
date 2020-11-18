@@ -17,11 +17,11 @@ module.exports = {
         component: require('@mapstore/product/pages/Maps')
     }, {
         name: "mapviewer",
-        path: "/visor/:mapType/:mapId",
+        path: "/viewer/:mapType/:mapId",
         component: require('@mapstore/product/pages/MapViewer')
     }, {
         name: "mapviewer",
-        path: "/visor/:mapId",
+        path: "/viewer/:mapId",
         component: require('@mapstore/product/pages/MapViewer')
    }, {
         name: "manager",
