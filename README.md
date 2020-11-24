@@ -10,6 +10,16 @@ Clone the repository with the --recursive option to automatically clone submodul
 
 Install NodeJS >= 7.10.0 , if needed, from [here](https://nodejs.org/en/download/releases/).
 
+Set the Mapstore tag version:
+
+```
+cd visor_ide_caceres/Mapstore2
+
+git checkout v2019.02.01
+```
+
+this will set the Mapstore2 version to the tag `v2019.02.01` necessary to run the viewer.
+
 Start the development application locally:
 
 `npm install`
