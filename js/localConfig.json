@@ -226,10 +226,10 @@
             }, {
                 "name": "TOC",
                 "cfg": {
-                    "activateQueryTool": false,
+                    "activateQueryTool": true,
                     "activateAddLayerButton": true,
-                    "activateAddGroupButton": false,
-                    "activateMapTitle": false,
+                    "activateAddGroupButton": true,
+                    "activateMapTitle": true,
                     "activateDownloadTool": false,
                     "activateRemoveLayer": true,
                     "activateSettingsTool": false
@@ -314,7 +314,7 @@
                 "declineUrl" : "http://www.google.com"
                 }
             },
-            "OmniBar", "BurgerMenu", "SearchServicesConfig", "Expander", "Undo", "Redo", "FullScreen"
+            "OmniBar", "Save", "SaveAs", "BurgerMenu", "SearchServicesConfig", "Expander", "Undo", "Redo", "FullScreen"
         ],
         "embedded": [{
                 "name": "Map",
@@ -452,6 +452,46 @@
             "externalCookieUrl" : "",
             "declineUrl" : "http://www.google.com"
           }
+        }],
+        "dashboard": [{
+            "name": "OmniBar",
+            "cfg": {
+                "containerPosition": "header",
+                "className": "navbar shadow navbar-home"
+            }
+        }, "Login", "Language", "NavMenu", "Attribution", "Home", {
+          "name": "DashboardEditor",
+          "cfg": {
+             "catalog": {
+              "url": "https://gs-stable.geo-solutions.it/geoserver/csw",
+              "type": "csw",
+              "title": "GeoSolutions GeoServer CSW",
+              "autoload": true
+            },
+            "containerPosition": "columns"
+          }
+        }, {
+          "name": "QueryPanel",
+          "cfg": {
+            "toolsOptions": {
+              "hideCrossLayer": true,
+              "hideSpatialFilter": true
+            },
+            "containerPosition": "columns"
+          }
+        }, "BurgerMenu", "Dashboard", "Notifications", {
+            "name": "Tutorial",
+            "cfg": {
+                "allowClicksThruHole": false,
+                "containerPosition": "header",
+                "preset": "dashboard_tutorial"
+            }
+        },
+        {
+            "name": "FeedbackMask",
+            "cfg": {
+                "containerPosition": "header"
+            }
         }],
         "manager": ["Header", "Redirect", "Manager", "Home", "UserManager", "GroupManager", "Footer"]
     }
