@@ -28,6 +28,16 @@ Start the development application locally:
 
 The application runs at `http://localhost:8081` afterwards.
 
+## Desplegar MapStore
+
+Para crear archivo .war:
+`./build.sh`
+
+Para fast build:
+`mvn clean install`
+
+Por un bug, el war no contiene los archivos de la carpeta "translations" en /js. Hay que descomprimir el .war e insertarlos manualmente antes de desplegar.
+
 ## GeoStore externo
 
 Para desarrollar solo front-end, se puede editar js/localConfig.js para añadir un geostore externo:
