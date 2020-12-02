@@ -78,7 +78,7 @@
         "description": "Municipios CNIG",
         "title": "Municipios Cáceres",
         "type": "wms",
-        "url": "http://ide2.dip-caceres.geomati.co/geoserver/provincia/wms",
+        "url": "/geoserver/provincia/wms",
         "bbox": {
           "crs": "EPSG:4326",
           "bounds": {
@@ -123,7 +123,7 @@
           "subTitle": "Municipio",
           "priority": 6,
           "options": {
-            "url": "http://ide2.dip-caceres.geomati.co/geoserver/provincia/wfs",
+            "url": "/geoserver/provincia/wfs",
             "typeName": "provincia:cnig_municipios",
             "queriableAttributes": [
               "nameunit"
@@ -140,7 +140,7 @@
   "catalogServices": {
     "services": {
       "caceres": {
-        "url": "http://ide2.dip-caceres.geomati.co/geoserver/provincia/wms",
+        "url": "/geoserver/provincia/wms",
         "type": "wms",
         "title": "DEV Geoserver dip-caceres",
         "autoload": false
