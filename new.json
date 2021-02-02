@@ -70,41 +70,6 @@
         "handleClickOnLayer": false,
         "useForElevation": false,
         "hidden": false
-      },
-      {
-        "id": "municipios",
-        "name": "cnig_municipios",
-        "group": "ide",
-        "description": "Municipios CNIG",
-        "title": "Municipios Cáceres",
-        "type": "wms",
-        "url": "/geoserver/provincia/wms",
-        "bbox": {
-          "crs": "EPSG:4326",
-          "bounds": {
-            "minx": "-7.554628742954795",
-            "miny": "39.05246173611291",
-            "maxx": "-4.994870842260799",
-            "maxy": "40.49798516581429"
-          }
-        },
-        "visibility": true,
-        "singleTile": false,
-        "allowedSRS": {
-          "EPSG:3785": true,
-          "EPSG:3857": true,
-          "EPSG:4269": true,
-          "EPSG:4326": true,
-          "EPSG:25830": true,
-          "EPSG:900913": true
-        },
-        "dimensions": [],
-        "hideLoading": false,
-        "handleClickOnLayer": false,
-        "catalogURL": null,
-        "useForElevation": false,
-        "hidden": false,
-        "params": {}
       }
     ],
     "groups": [
@@ -140,9 +105,9 @@
   "catalogServices": {
     "services": {
       "caceres": {
-        "url": "/geoserver/provincia/wms",
+        "url": "/geoserver/wms",
         "type": "wms",
-        "title": "DEV Geoserver dip-caceres",
+        "title": "IDE Diputación Cáceres",
         "autoload": false
       },
       "pnoa-historico": {
