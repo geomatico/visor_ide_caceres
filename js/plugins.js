@@ -29,7 +29,6 @@ module.exports = {
         ContentTabs: require('@mapstore/plugins/ContentTabs'),
         CookiePlugin: require('@mapstore/plugins/Cookie'),
         CreateNewMapPlugin: require('@mapstore/plugins/CreateNewMap'),
-        Dashboard: require('@mapstore/plugins/Dashboard'),
         DetailsPlugin: require('@mapstore/plugins/Details'),
         DrawerMenuPlugin: require('@mapstore/plugins/DrawerMenu'),
         ExpanderPlugin: require('@mapstore/plugins/Expander'),
