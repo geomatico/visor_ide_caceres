@@ -9,11 +9,12 @@
           "http://cloudsdi.geo-solutions.it",
           "https://gs-stable.geo-solutions.it/geoserver",
           "https://gs-stable.geo-solutions.it:443/geoserver",
-          "http://ide.dip-caceres.geomati.co/geoserver",
           "http://ide2.dip-caceres.geomati.co/geoserver",
           "https://ide2.dip-caceres.geomati.co/geoserver",
-          "https://ide.dip-caceres/geoserver",
-          "https://idepruebas.dip-caceres/geoserver",
+          "http://ideprueba.dip-caceres.es/geoserver",
+          "https://ideprueba.dip-caceres.es/geoserver",
+          "http://ide.dip-caceres.es/geoserver",
+          "https://ide.dip-caceres.es/geoserver",
           "http://www.ign.es/wms/pnoa-historico",
           "https://www.ign.es/wms/pnoa-historico"
         ]
