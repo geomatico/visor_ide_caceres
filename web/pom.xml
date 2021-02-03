@@ -454,15 +454,20 @@
             </snapshots>
         </repository>
 
-        <!-- JBoss -->
-        <repository>
-            <id>jboss-repo</id>
-            <name>JBoss Maven2 Repository</name>
-            <url>http://repository.jboss.com/maven2</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
+	      <repository>
+   <id>jboss-repo</id>
+   <name>OSGeo Nexus Release Repository</name>
+   <url>https://repo.osgeo.org/repository/release/</url>
+   <!-- contains release (including third-party-dependences)               -->
+   <!-- Restlet maven Repository (http://maven.restlet.org)                             -->
+   <!-- ucar (https://artifacts.unidata.ucar.edu/content/repositories/unidata-releases) -->
+   <snapshots>
+     <enabled>false</enabled>
+   </snapshots>
+   <releases>
+     <enabled>true</enabled>
+   </releases>
+  </repository>
 
         <!-- Spring -->
         <repository>
