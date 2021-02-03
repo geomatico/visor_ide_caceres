@@ -427,7 +427,13 @@
                 "className": "navbar shadow navbar-home"
             }
         }, "ManagerMenu", "Login","Language", "NavMenu", "Attribution", "ScrollTop", "Notifications"],
-        "maps": ["HomeDescription", "Fork", "MapSearch", "CreateNewMap", "FeaturedMaps", "ContentTabs",
+        "maps": ["HomeDescription", "Fork", "MapSearch",
+          {
+            "name":  "CreateNewMap",
+            "cfg": {
+              "showNewDashboard": false
+            }
+          }, "FeaturedMaps", "ContentTabs",
 
           {
             "name": "Maps",

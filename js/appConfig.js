@@ -32,14 +32,6 @@ module.exports = {
         path: "/manager/:tool",
         component: require('@mapstore/product/pages/Manager')
     }, {
-        name: "dashboard",
-        path: "/dashboard",
-        component: require('@mapstore/product/pages/Dashboard')
-    }, {
-        name: "dashboard",
-        path: "/dashboard/:did",
-        component: require('@mapstore/product/pages/Dashboard')
-    }, {
         name: "rulesmanager",
         path: "/rules-manager",
         component: require('@mapstore/product/pages/RulesManager')
