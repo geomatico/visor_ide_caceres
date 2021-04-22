@@ -175,7 +175,7 @@ carpeta:
       <groupId>it.geosolutions.geostore</groupId>
       <artifactId>geostore-rest-client</artifactId>
       <version>${geostore-version}</version>
-   </dependency
+   </dependency>
 ``` 
 
 después desde la misma carpeta ejecutamos:
