@@ -68,7 +68,7 @@ const thumbs = {
         "s2cloudless:s2cloudless": s2cloodless
     },
     pnoa: {
-        pnoa
+        'OI.OrthoimageCoverage': pnoa
     }
 };
 

@@ -12,19 +12,22 @@
     "mapOptions": {
       "view": {
          "resolutions": [
-           1322.91666666667,
-           661.458333333335000,
-           264.583333333334000,
-           132.291666666667000,
-           66.145833333333500,
-           39.687500000000100,
-           26.458333333333400,
-           13.229166666666700,
-           6.614583333333350,
-           3.968750000000010,
-           1.322916666666670,
-           0.661458333333335,
-           0.396875000000001
+          396.875000000001,
+          343.958333333000,
+          330.729166666675,
+          264.583333333334,
+          198.437500000005,
+          132.291666666667,
+          66.1458333333335,
+          39.6875000000001,
+          26.4583333333334,
+          13.2291666666667,
+          6.61458333333335,
+          2.64583333333334,
+          1.32291666666667,
+          0.52916666666668,
+          0.264583333333334,
+          0.132291666666667
          ]
        },
 
@@ -58,11 +61,11 @@
         "id": "OI.OrthoimageCoverage__1",
         "format": "image/jpeg",
         "group": "background",
-        "name": "pnoa",
+        "name": "OI.OrthoimageCoverage",
         "title": "PNOA",
         "source": "pnoa",
         "type": "wms",
-        "url": "http://www.ign.es/wms-inspire/pnoa-ma?",
+        "url": "https://www.ign.es/wms-inspire/pnoa-ma?",
         "visibility": false,
         "singleTile": false,
         "dimensions": [],
@@ -111,9 +114,9 @@
         "autoload": false
       },
       "pnoa-historico": {
-        "url": "http://www.ign.es/wms/pnoa-historico",
+        "url": "https://www.ign.es/wms/pnoa-historico",
         "type": "wms",
-        "title": "PNOA Ortofotos historicas",
+        "title": "PNOA Ortofotos históricas",
         "autoload": false
       }
     },

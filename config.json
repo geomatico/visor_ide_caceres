@@ -16,7 +16,7 @@
       {
         "type": "wms",
         "url":"http://www.ign.es/wms-inspire/pnoa-ma?",
-        "name": "pnoa",
+        "name": "OI.OrthoimageCoverage",
         "title": "PNOA",
         "source": "pnoa",
         "format": "image/jpeg",
