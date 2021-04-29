@@ -62,7 +62,7 @@
         "title": "PNOA",
         "source": "pnoa",
         "type": "wms",
-        "url": "http://www.ign.es/wms-inspire/pnoa-ma?",
+        "url": "https://www.ign.es/wms-inspire/pnoa-ma?",
         "visibility": false,
         "singleTile": false,
         "dimensions": [],
@@ -111,7 +111,7 @@
         "autoload": false
       },
       "pnoa-historico": {
-        "url": "http://www.ign.es/wms/pnoa-historico",
+        "url": "https://www.ign.es/wms/pnoa-historico",
         "type": "wms",
         "title": "PNOA Ortofotos historicas",
         "autoload": false
