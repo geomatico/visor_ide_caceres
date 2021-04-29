@@ -136,6 +136,11 @@
                     "activateMapTitle": false,
                     "activateSortLayer": false
                 }
+            }, "AddGroup", {
+                "name": "TOCItemsSettings",
+                "cfg": {
+                    "width": 300
+                }
             }, {
                 "name": "Tutorial",
                 "cfg": {
@@ -236,6 +241,7 @@
                     "activateSettingsTool": false
                 }
             },
+            "AddGroup",
             "MapFooter", {
                 "name": "Measure"
             }, "Print", {
@@ -386,7 +392,7 @@
                     "alwaysVisible": true
                 }
 
-            }, "MapFooter", {
+            }, "AddGroup", "MapFooter", {
                 "name": "Settings",
                 "cfg": {
                     "wrap": true
